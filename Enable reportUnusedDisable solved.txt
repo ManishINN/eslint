@@ -1,0 +1,8 @@
+You can add root: true to the config file, that way it will not inherit the other config files. The eslint.json file should look like this:
+
+module.exports = {
+  root: true,
+  rules: {
+    semi: ["error", "always"],
+  }
+};
