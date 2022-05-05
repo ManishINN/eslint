@@ -1,0 +1,10 @@
+Unexpected indent. This line of code has more spaces at the start than the one before, but the one before is not the start of a subblock (e.g. if/while/for statement). All lines of code in a block must start with exactly the same string of whitespace. For instance:
+
+>>> def a():
+...   print "foo"
+...     print "bar"
+IndentationError: unexpected indent
+This one is especially common when running python interactively: make sure you don't put any extra spaces before your commands. (Very annoying when copy-and-pasting example code!)
+
+>>>   print "hello"
+IndentationError: unexpected indent
