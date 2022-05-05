@@ -1,0 +1,7 @@
+4
+
+Create a set of interfaces for the main interaction objects that will be exposed by your application and build them in a lib/dll of their own and implement those interfaces on classes in your application as appropriate. The library should also include a plugin interface with perhaps just an "initialize" method that the plugin object will implement.
+
+The application and plugin will obviously link against that DLL and once the plugin is loaded by the application the application should call the plugin's initialize method which will have parameters to accept any objects needed to control the application.
+
+A popular way of making this simple is to implement a hierarchy similar to the DOM in your application so that the plugin can get to all the relevant objects in your application from one root object.
